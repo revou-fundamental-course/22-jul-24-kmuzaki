@@ -1,23 +1,15 @@
-var slideIndex = 1;
-showDivs(slideIndex);
+// Banner autoslide //
+showSlide();
 
-function plusDivs(n) {
-    showDivs(slideIndex += n);
-}
+function showSlide() {
+    let listimg = document.getElementsByClassName('main-content-banner');
+    console.log(listimg);
 
-function showDivs(n) {
-    var i;
-    var imglist = document.getElementsByClassName("main-content-banner");
-    if (n > imglist.length) slideIndex = 1;
-    else if(n < 1) slideIndex = imglist.length;
-
-    for(i = 0; i < imglist.length; i++) {
-        imglist[i].style.display = 'none';
+    let index = 0;
+    while (index < listimg.length) {
+        listimg[index].style.display = 'none';
+        index++;
     }
-    
-    imglist[slideIndex -1].style.display = 'block';
-}    
 
-setInterval(() => {
-    plusDivs(1);
-}, 1000);
+    listimg[0].style.display = 'block';
+}

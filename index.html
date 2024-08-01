@@ -23,31 +23,17 @@
         <main>
             <article class="main-title">
                 <header>
-                    <h1>Your trusted travel agent</h1>
+                    <h1 class="main-title-header">Your trusted travel agent</h1>
                 </header>
-                <p>Your travelling satisfaction is our job</p>
+                <p class="main-title-sub">Your travelling satisfaction is our job</p>
             </article>
 
             <section class="main-content">
                 <article class="main-content-item">
-                    <img
-                        class="main-content-banner"
-                        src="https://pixabay.com/get/g56463f188218cce4a2d9ae70e0423e969caf3e0a299ca4697f1b70a347f166bcb2d3c6257ebf8c7d2b21f3e7e1c828b5_1280.png"
-                    />
-
-                    <img
-                        class="main-content-banner"
-                        src="https://pixabay.com/get/g79cd1e8d21c5601f0481fef2feba9735a10f56333122c381fadb93b25f760e9a3567b61c8c2a1c7a470bcac7149e291d_1280.jpg"
-                    />
-
-                    <img
-                        class="main-content-banner"
-                        src="https://pixabay.com/get/g808f798559001a78f2abaa901db3c3d7df5bf03f328140a00e5f3db0d1548ece5b92cdbaf122e28349e49c1cdf5eb393_1280.jpg"
-                    />
-
-                    <div>
-                        <button onclick="plusDivs(-1)">Previous</button>
-                        <button onclick="plusDivs(1)">Next</button>
+                    <div class="main-content-banner-container">
+                        <div class="main-content-banner banner-1"></div>
+                        <div class="main-content-banner banner-2"></div>
+                        <div class="main-content-banner banner-3"></div>
                     </div>
 
                     <div class="main-item">
@@ -60,11 +46,12 @@
 
                     <div>
                         <h2>Why us?</h2>
-                        <div class="main-item">
-                            <div class="item-numbers">1</div>
-                            <div>
-                            <p>Affordable travelling prices in the whole town!</p>
-                            </div>
+                        <div>
+                            <ol type="1">
+                                <li>Best travelling prices! No hidden costs</li>
+                                <li>24/7 Customer Service</li>
+                                <l1>Money back guarantee if flight cancelled</li>
+                            </ol>
                         </div>
                     </div>
 
@@ -77,18 +64,18 @@
                     </div>
                     <div class="main-content-form">
                         <h3>Your name (First and last name)</h3>
-                        <input type="text"/>
+                        <input type="text" required/>
                         <h3>Email address</h3>
-                        <input type="text"/>
+                        <input type="text" required/>
                         <h3>What are you interested in?</h3>
-                        <select class="main-content-form-select">
+                        <select class="main-content-form-select" required>
                             <option>Where to start?</option>
                             <option>Travel packages</option>
                             <option>Travel destinations</option>
                             <option>Managing tickets</option>
                             <option>Other</option>
                         </select>
-                        <button type="button">Submit</button>
+                        <button type="submit">Submit</button>
                     </div>
                 </form>
 

@@ -1,14 +1,4 @@
-/* Ini CSS */
-
-nav{
-    border-bottom: 2px solid;
-    border-bottom-color: lightgray;
-    display: flex;
-    justify-content: space-between;
-    padding: 12px;
-    align-items: center;
-    
-}
+/* Media query */
 
 @media only screen and (max-width: 600px) {
     nav {
@@ -25,11 +15,24 @@ nav{
     }
 }
 
+nav{
+    border-bottom: 2px solid;
+    border-bottom-color: lightgray;
+    background-color: lavender;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    align-items: center;
+    
+}
+
+
+
 .logo-icon{
     border: 1px solid;
-    background-image: url(https://picsum.photos/200)
+    background-image: url(https://github.com/revou-fundamental-course/22-jul-24-kmuzaki/blob/main/assets/logo%20icon.png?raw=true);
     width: 50px;
-    height: 25px;
+    height: 50px;
     background-size: cover;
 }
 
@@ -45,6 +48,14 @@ nav{
 
 .main-title{
     text-align: center;
+}
+
+.main-title-header{
+    font-size: 25px;
+}
+
+.main-title-sub{
+    font-size: 10px;
 }
 
 .main-content{
@@ -63,6 +74,23 @@ nav{
     border: 1px solid;
     width: 100%;
     height: 250px;
+}
+
+.main-content-banner-container{
+    width: 100%;
+    height: 250px
+}
+
+.banner-1{
+    background-image: url(https://github.com/revou-fundamental-course/22-jul-24-kmuzaki/blob/main/assets/IMG20240622063349.jpg?raw=true);
+}
+
+.banner-2{
+    background-image: url(https://github.com/revou-fundamental-course/22-jul-24-kmuzaki/blob/main/assets/IMG20240622075503.jpg?raw=true);
+}
+
+.banner-3{
+    background-image: url(https://github.com/revou-fundamental-course/22-jul-24-kmuzaki/blob/main/assets/IMG20240707062008.jpg?raw=true);
 }
 
 .item-icon{
